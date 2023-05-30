@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Google Calendar Description Prefiller",
+    "description": "This extension prefills the description field when creating events in Google Calendar.",
+    "version": "1.0",
+    "icons": { "16": "icon16.png", "48": "icon48.png", "128": "icon128.png" },
+    "content_scripts": [
+      {
+        "matches": ["*://calendar.google.com/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "options_page": "options.html",
+    "permissions": [
+        "storage"
+    ]
+  }
+  
