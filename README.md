@@ -2,6 +2,8 @@
 
 This is a simple script that will prefill the description of a Google Calendar event with a template.
 
+<img src="https://github.com/prokopsimek/google-calendar-description-prefiller/blob/main/docs/config.png" style="max-width: 400px; align: center;">
+
 ## Installation
 
 1. Go to the [Google Chrome Store]
@@ -20,6 +22,10 @@ This is a simple script that will prefill the description of a Google Calendar e
 2. Click on the "Create" button
 3. Click on "Add description"
 4. Choose a template from the dropdown and see the description get filled in
+
+<img src="https://github.com/prokopsimek/google-calendar-description-prefiller/blob/main/docs/cal-open.png" style="max-width: 400px;">
+<img src="https://github.com/prokopsimek/google-calendar-description-prefiller/blob/main/docs/cal-prefilled.png" style="max-width: 400px;">
+
 
 ## Development
 
