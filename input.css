@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "tailwindcss/forms";
+
+@layer base {
+    * {
+        @apply text-base antialiased;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      @apply font-mono text-primary py-2;
+    }
+    h1 {
+      @apply text-4xl;
+    }
+    h2 {
+      @apply text-3xl text-secondary;
+    }
+    h3 {
+      @apply text-2xl;
+    }
+    h4 {
+      @apply text-xl;
+    }
+    h5 {
+      @apply text-lg;
+    }
+    h6 {
+      @apply text-base;
+    }
+
+    .option {
+        @apply flex flex-row items-start justify-evenly border-b border-secondary py-4 my-4 last:border-b-0;
+    }
+
+    label {
+        @apply font-mono text-base leading-9 text-secondary tracking-wider py-0.5;
+    }
+  
+    input.form-input, textarea.form-textarea {
+        @apply bg-gray-100 border-transparent rounded-sm focus:border-gray-500 focus:bg-white focus:ring-0;
+    }
+
+    button, input[type="submit"] {
+        @apply transition-colors duration-200;
+        @apply px-6 mx-2 font-mono text-base leading-9 tracking-wider text-teal rounded-sm border-2 cursor-pointer;
+    }
+  
+    .btn-primary {
+        @apply bg-primary text-teal border-primary;
+        @apply hover:bg-primary/50;
+    }
+  
+    .btn-secondary, #deleteOption, #addOption {
+        @apply bg-transparent text-secondary border-secondary;
+    }
+
+    .ck.ck-reset.ck-editor {
+        @apply w-96;
+    }
+
+    .ck.ck-content ul, .ck.ck-content p, .ck.ck-content ol  {
+        @apply my-2;
+    }
+
+    .ck.ck-content ul, .ck.ck-content ol {
+        @apply pl-6
+    }
+  }

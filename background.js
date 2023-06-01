@@ -20,14 +20,14 @@ function createDefaultOptions() {
 chrome.runtime.onInstalled.addListener(function(details) {
     if (details.reason == "install") {
         // This is a first install!
-        createDefaultOptions(defaultOptions);
+        createDefaultOptions();
 
     } else if (details.reason == "update") {
         // This is an update!
         // create defaults only if not set any
         chrome.storage.sync.get(['options'], function(result) {
             if (result.options.length == 0) {
-                createDefaultOptions(defaultOptions);
+                createDefaultOptions();
             }
         });
     }

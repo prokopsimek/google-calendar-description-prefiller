@@ -2,5 +2,15 @@
   "name": "gcal-chrome-extension",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "dev": "tailwindcss -i ./input.css -o ./output.css -m --watch",
+    "build": "webpack && tailwindcss -i ./input.css -o ./output.css -m"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.3",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.24",
+    "tailwindcss": "^3.3.2"
+  }
 }

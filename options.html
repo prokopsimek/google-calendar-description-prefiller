@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
     <title class="pageTitle"></title>
+    <link href="/output.css" rel="stylesheet">
   </head>
   <body>
-    <h1 class="pageTitle"></h1>
-    <h2>Options for My Extension</h2>
-    <form id="optionForm">
-        <button id="addOption">Add new option</button>
-      <br />
-      <input id="submitForm" type="submit" value="Save">
-    </form>
-    <script src="options.js"></script>
+    <div class="m-auto container py-12">
+        <h1 class="pageTitle"></h1>
+        
+        <p class="mt-4 mb-8">
+            Configure your templates here. You can define as many templates as you want. Each template will be available as a button in the event editor.
+        </p>
+        
+        <h2 class="">Your templates</h2>
+        
+        <form id="optionForm">
+            <button id="addOption">Add new option</button>
+            <input id="submitForm" class="btn-primary" type="submit" value="Save">
+        </form>
+    </div>
+    <script src="options.js" type="text/javascript"></script>
+    <script src="ckeditor.js" type="text/javascript"></script>
   </body>
 </html>

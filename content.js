@@ -82,7 +82,6 @@ function createSelectBox() {
 
     // Add the select box to the parent element.
     if (parentElement) {
-        // parentElement.appendChild(selectBox);
         parentElement.prepend(selectBoxWrapper);
     }
 
@@ -122,10 +121,7 @@ var observer = new MutationObserver(function(mutations) {
     if (!selectBoxElement()) {
         mutations.forEach(function(mutation) {
             // If new nodes are added and the description field is available, prefill it.
-            // if (mutation.addedNodes && document.querySelector(selector) && !document.querySelector(`#${selectBoxId}`)) {
-
             if (mutation.addedNodes && descriptionFieldVisible() && descriptionEditableAreaVisible() && !selectBoxElement()) {
-                // prefillDescription();
                 // Call the function to create the select box.
                 createSelectBox();
             }
