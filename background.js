@@ -2,10 +2,10 @@
 const defaultOptions = [
     {
         title: 'Meeting goals',
-        description: '<b>Goal:</b>'
+        description: '<b>Goal:</b> '
     },
     {
-        title: '1:1',
+        title: '1:1 meeting',
         description: '<b>Areas to cover:</b><br><ul><li>Area 1</li><li>Area 2</li><li>Area 3</li></ul>'
     }
 ];

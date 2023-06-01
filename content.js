@@ -6,6 +6,7 @@ var descriptionPlaceholder = `${descriptionFieldSelector} > div[aria-hidden="fal
 var styles = `
 #prefillDescription {
     padding: 0 0 8px 0;
+    align-self: start;
 }
 
 #prefillDescription label {

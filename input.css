@@ -56,6 +56,13 @@
         @apply bg-transparent text-secondary border-secondary;
     }
 
+    #footer {
+        @apply flex justify-end pt-12;
+    }
+    #footer a {
+        @apply text-secondary hover:underline text-right;
+    }
+
     .ck.ck-reset.ck-editor {
         @apply w-96;
     }
