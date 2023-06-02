@@ -8,7 +8,7 @@ This is a simple script that will prefill the description of a Google Calendar e
 
 ## Installation
 
-1. Go to the <a href="https://chrome.google.com/webstore/detail/google-calendar-descripti/coojcmcomfnjnpeejpnojnokdjackihp/" target="_blank">Google Web Store</a>
+1. Go to the [Google Web Store](https://chrome.google.com/webstore/detail/google-calendar-descripti/coojcmcomfnjnpeejpnojnokdjackihp/)
 2. Click "Add to Chrome"
 
 ## Configuration
